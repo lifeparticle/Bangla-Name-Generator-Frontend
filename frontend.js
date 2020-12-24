@@ -1,7 +1,7 @@
 function func1(){
 
     document.getElementById('print1').innerHTML = "";
-    
+
     var rd1 = document.getElementById("male_radio");
     var rd2 = document.getElementById("female_radio");
 
@@ -11,18 +11,18 @@ function func1(){
         gender_type = "male"
 
         fetchData(link, gender_type)
-    }     
+    }
     else if (rd2.checked==true){
 
         link = 'https://first-serverless.vercel.app/api/index?gender=female'
         gender_type = "female"
-        
+
         fetchData(link, gender_type)
     }
     else{
         alert("Chose gender")
     }
-} 
+}
 
 
 function fetchData(genderLink, gender) {
@@ -35,13 +35,13 @@ function fetchData(genderLink, gender) {
 
             if (!response.ok){
                 throw Error("ERROR");
-            }         
+            }
             return response.json();
         })
 
         .then(input => {
 
-            if (gender=="male"){    
+            if (gender=="male"){
             document.querySelector("#print1").insertAdjacentHTML("afterbegin",`<p> Name : ${input.male} </p>`);
             }
 
@@ -54,27 +54,3 @@ function fetchData(genderLink, gender) {
             console.log(error);
         });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

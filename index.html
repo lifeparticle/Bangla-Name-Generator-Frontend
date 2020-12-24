@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-    
-    
-
-    <title>Bengali Name Generator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="style.css">
-    <script src="frontend.js" defer></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bengali Name Generator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="frontend.js" defer></script>
 </head>
-
-
-
 <body>
+	<div class="container">
+		<div class="row parent">
+			<h1>Bangla Name Generator</h1>
+			<div class="row">
+				<div class="col col-lg-12">
+					<div class="btn-group btn-group-toggle" data-toggle="buttons">
+						<label class="btn btn-outline-primary active">
+							<input type="radio" name="grp1" id="male_radio" autocomplete="off" checked> Male
+						</label>
+						<label class="btn btn-outline-primary">
+							<input type="radio" name="grp1" id="female_radio" autocomplete="off"> Female
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col">
+					<button onclick="func1()" id="btn1" class="btn btn-success"> Find Name </button> </h3>
 
-<section>  
-    <div class="container-class">
-            <h1 class="h1-class">Bangla Name Generator</h1>
-                <br>
-                <div class="input_class">
-                   <h3> <input type="radio" id="male_radio" name="grp1" value="male"> Male </input> </h3>
-                   <br>
-                   <h3> <input type="radio" id="female_radio" name="grp1" value="female"> Female </input> </h3> 
-                </div>  
-                <br>
-                <h3> <button onclick="func1()" id="btn1" class="btn btn-success"> Find Name </button> </h3>
-                <br>
-                <br>
-                <br>
-                <h3><output id="print1"></output></h3>
-    </div>
-</section>  
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col">
+					<h3><output id="print1"></output></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
