@@ -4,12 +4,12 @@ function func1() {
 	var rd2 = document.getElementById("female_radio");
 
 	if(rd1.checked == true){
-		link = 'https://first-serverless.vercel.app/api/index?gender=male';
+		link = 'https://bangla-name-generator.vercel.app/api/gen?gender=male';
 		gender_type = "male";
 		fetchData(link, gender_type);
 	} else if (rd2.checked == true) {
 
-		link = 'https://first-serverless.vercel.app/api/index?gender=female';
+		link = 'https://bangla-name-generator.vercel.app/api/gen?gender=female';
 		gender_type = "female";
 
 		fetchData(link, gender_type);
